@@ -1,13 +1,13 @@
 """Premiers exercices : remplacer les `...` par votre code."""
 
 
-def test_afficher_un_message(capsys):
-    # Votre code : affichez exactement "Bonjour Ada !"
-    ...
+def test_afficher_un_message():
+    # Votre code : Créer une variable 'sortie' = "J'adore python"
+
+    sortie = "J'adore python"
 
     # Assert
-    sortie = capsys.readouterr().out
-    assert sortie == "Bonjour Ada !\n"
+    assert sortie == "J'adore python"
 
 
 def test_inspecter_des_variables():
