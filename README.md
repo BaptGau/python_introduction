@@ -11,7 +11,7 @@ Supports courts pour découvrir Python par la pratique.
 ## Démarrage
 
 ```bash
-uv sync
+uv sync --all-groups
 uv run pytest exercices
 ```
 

@@ -1,0 +1,139 @@
+"""Premiers exercices : remplacer les `...` par votre code."""
+
+
+def test_afficher_un_message():
+    # Votre code : Créer une variable 'sortie' = "J'adore python"
+
+    sortie = "J'adore python"
+
+    # Assert
+    assert sortie == "J'adore python"
+
+
+def test_inspecter_des_variables():
+    # Given
+    entier = 42
+    decimal = 3.14
+    texte = "Python"
+    booleen = True
+
+    # Votre code : remplacez chaque `...` par le bon type.
+    # Posez aussi un breakpoint ici et inspectez les quatre variables.
+
+    assert type(entier) is int
+    assert type(decimal) is float
+    assert type(texte) is str
+    assert type(booleen) is bool
+
+
+def test_operations_numeriques():
+    # Votre code
+    division = 7/2
+    division_entiere = 7//2
+    reste = 3%2
+    puissance = 7**2
+
+    # Asserts
+    assert division == 3.5
+    assert division_entiere == 3
+    assert reste == 1
+    assert puissance == 49
+
+
+def test_operations_sur_les_textes():
+    # Given
+    debut = "Py"
+    fin = "thon"
+
+    # Votre code
+    langage = debut + fin
+    rire = "ha"*3
+
+    # Asserts
+    assert langage == "Python"
+    assert rire == "hahaha"
+
+
+def test_operations_sur_les_booleens():
+    # Given
+    prof_est_sympa = True
+    je_prefere_sas = False
+
+    add_result = prof_est_sympa + je_prefere_sas
+    mult_result = prof_est_sympa * je_prefere_sas
+
+    # Asserts - complétez les ...
+    assert add_result == 1
+    assert mult_result == 0
+    assert type(add_result) is int
+    assert type(mult_result) is int
+
+
+"""Imports, erreurs et saisie utilisateur."""
+
+import pytest
+
+
+def test_importer_une_fonction():
+    # Votre code : importez sqrt depuis le module math.
+    import math
+
+    # Assert : remplacez `...` par un appel à sqrt.
+    assert math.sqrt(9) == 3
+
+
+def test_comprendre_une_erreur_de_type():
+    # Quelle type d'erreur cette opération retourne t-elle ? hint: executer la commande hors du test pour voir.
+    with pytest.raises(TypeError):
+        "3" + 2
+
+
+def test_corriger_une_erreur_de_type():
+    # Given
+    nombre_saisi = "3"
+
+    # Votre code : obtenez le nombre 5 avec une conversion et une addition.
+    resultat = int(nombre_saisi) + 2
+
+    # Assert
+    assert resultat == 5
+    assert type(resultat) is int
+
+
+def test_lire_une_saisie(monkeypatch):
+    # Pytest simule la saisie de l'utilisateur.
+    monkeypatch.setattr("builtins.input", lambda message: "Ada")
+
+    # Votre code : appelez input() avec la question "Ton prénom ? ".
+    prenom = input("Ton prénom ? ")
+
+    # Assert
+    assert prenom == "Ada"
+
+
+def test_int_conversion():
+    age_str = "12"
+
+    # Votre code : Convertissez age_str et ajouter 1.
+    age_annee_prochaine = int(age_str) + 1
+
+    # Assert
+    assert age_annee_prochaine == 13
+
+
+def test_boolean_conversion():
+    ma_str = "J'adore le cours de python"
+
+    print(bool(""))
+
+    assert bool(ma_str) == True
+
+
+def test_str_conversion():
+    age = 27
+
+    # Votre code : str converted doit contenir la chaîne: "J'ai 27 ans"
+    str_test = "J'ai "+str(age)+" ans"
+    str_converted = f"J'ai {age} ans"
+
+    assert str_test == "J'ai 27 ans"
