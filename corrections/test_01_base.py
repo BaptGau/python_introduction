@@ -28,9 +28,9 @@ def test_inspecter_des_variables():
 
 def test_operations_numeriques():
     # Votre code
-    division = 7/2
-    division_entiere = 7//2
-    reste = 3%2
+    division = 7 / 2
+    division_entiere = 7 // 2
+    reste = 3 % 2
     puissance = 7**2
 
     # Asserts
@@ -47,7 +47,7 @@ def test_operations_sur_les_textes():
 
     # Votre code
     langage = debut + fin
-    rire = "ha"*3
+    rire = "ha" * 3
 
     # Asserts
     assert langage == "Python"
@@ -133,7 +133,7 @@ def test_str_conversion():
     age = 27
 
     # Votre code : str converted doit contenir la chaîne: "J'ai 27 ans"
-    str_test = "J'ai "+str(age)+" ans"
+    str_test = "J'ai " + str(age) + " ans"
     str_converted = f"J'ai {age} ans"
 
     assert str_test == "J'ai 27 ans"
