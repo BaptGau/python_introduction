@@ -51,6 +51,7 @@ def calculer_sous_total(prix_unitaire: float, quantite: int) -> float:
     sous_total = prix_unitaire * quantite
     return sous_total
 
+
 def calculer_tva(sous_total: float, taux_tva: float) -> float:
     return sous_total * taux_tva
 
@@ -67,6 +68,7 @@ def calculer_total(prix_unitaire: float, quantite: int, taux_tva: float) -> floa
 
     return total
 
+
 def test_calculer_sous_total():
     assert calculer_sous_total(12.5, 4) == 50.0
 
@@ -78,7 +80,6 @@ def test_calculer_tva():
 # Exercice 5 : accepter plusieurs arguments positionnels avec *args.
 def additionner(*nombres: float) -> float:
     return sum(nombres)
-
 
 
 def test_additionner_avec_args():
@@ -102,7 +103,6 @@ def test_creer_profil_avec_kwargs():
     }
 
     # Remplacez `...` par deux arguments nommés.
-    resultat = creer_profil(nom="Ada",
-                            langage="Python")
+    resultat = creer_profil(nom="Ada", langage="Python")
 
     assert attendu == resultat

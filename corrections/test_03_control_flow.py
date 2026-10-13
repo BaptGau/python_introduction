@@ -1,4 +1,5 @@
 """Control flow : booléens, conditions, pattern matching et boucle while."""
+
 from typing import Literal
 
 
@@ -32,7 +33,6 @@ def classer_temperature(temperature: float) -> Literal["gel", "frais", "chaud"]:
         return "frais"
     else:
         return "chaud"
-
 
 
 def test_classer_temperature():
@@ -93,11 +93,12 @@ def compter_jusqua(limite: int) -> list[int]:
     # hint: Vous pouvez utiliser la méthode 'output.append(<element>)' pour ajouter un élément à une liste
     compteur = 1
 
-    while compteur < limite+1:
+    while compteur < limite + 1:
         output.append(compteur)
         compteur += 1
 
     return output
+
 
 def test_compter_jusqua():
     assert compter_jusqua(1) == [1]
@@ -123,6 +124,7 @@ def trouver_premier_multiple(
 
     return None
 
+
 def test_trouver_premier_multiple():
     assert trouver_premier_multiple(10, 20, 7) == 14
     assert trouver_premier_multiple(15, 20, 7) is None
@@ -137,8 +139,7 @@ def factorielle(n: int) -> int | None:
     if n == 1:
         return n
     else:
-        return n*factorielle(n-1)
-
+        return n * factorielle(n - 1)
 
 
 def test_factorielle_recursive():
