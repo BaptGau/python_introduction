@@ -50,7 +50,7 @@ Affecter une variable est généralement rapide : Python copie une
 ```python
 grande_liste = list(range(1_000_000))
 
-meme_liste = grande_liste          # rapide : nouvelle référence
+meme_liste = grande_liste  # rapide : nouvelle référence
 autre_liste = grande_liste.copy()  # plus long : copie des éléments
 ```
 
@@ -117,7 +117,7 @@ nombres = [1, 2]
 autres_nombres = nombres
 
 nombres.append(3)  # modifie l'objet partagé
-nombres = [9]      # relie seulement `nombres` à un nouvel objet
+nombres = [9]  # relie seulement `nombres` à un nouvel objet
 ```
 
 Après ces instructions :

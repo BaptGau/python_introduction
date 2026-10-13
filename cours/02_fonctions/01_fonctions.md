@@ -98,7 +98,7 @@ def additionner(a: int, b: int) -> int:
 
 
 resultat = additionner(2, 3)  # resultat vaut 5
-print(resultat)                # affiche 5
+print(resultat)  # affiche 5
 ```
 
 - `return` transmet une valeur au code qui appelle la fonction ;
@@ -116,7 +116,7 @@ def saluer(prenom: str, message: str = "Bonjour") -> str:
     return message + " " + prenom
 
 
-saluer("Ada")                         # argument positionnel
+saluer("Ada")  # argument positionnel
 saluer(prenom="Ada", message="Salut")  # arguments nommés
 ```
 
@@ -132,7 +132,7 @@ def additionner(*nombres: float) -> float:
     return sum(nombres)
 
 
-additionner(2, 3)        # nombres vaut (2, 3)
+additionner(2, 3)  # nombres vaut (2, 3)
 additionner(2, 3, 4, 5)  # nombres vaut (2, 3, 4, 5)
 ```
 

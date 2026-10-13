@@ -10,9 +10,9 @@ age = 20
 
 age == 20  # égal à
 age != 20  # différent de
-age < 20   # inférieur à
+age < 20  # inférieur à
 age <= 20  # inférieur ou égal à
-age > 20   # supérieur à
+age > 20  # supérieur à
 age >= 20  # supérieur ou égal à
 ```
 
@@ -193,7 +193,7 @@ while True:
     commande = input("Commande : ")
 
     if commande == "stop":
-        break     # quitte immédiatement la boucle
+        break  # quitte immédiatement la boucle
 
     if commande == "":
         continue  # passe directement au tour suivant
@@ -220,9 +220,9 @@ Elle a besoin de deux parties :
 
 ```python
 def fibonacci(position: int) -> int:
-    if position == 0:              # cas de base
+    if position == 0:  # cas de base
         return 0
-    if position == 1:              # cas de base
+    if position == 1:  # cas de base
         return 1
 
     return fibonacci(position - 1) + fibonacci(position - 2)  # cas récursif
