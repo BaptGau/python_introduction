@@ -16,6 +16,7 @@ class CompteBancaire:
             raise ValueError("Le montant doit être positif.")
 
         self._solde += montant
+        self.methode()
 
     def retirer(self, montant: int) -> None:
         if montant <= 0:
@@ -26,6 +27,11 @@ class CompteBancaire:
 
         self._solde -= montant
 
+
+
+
+compte = CompteBancaire(titulaire="Baptiste", solde_initial=0)
+compte.deposer()
 
 # state-full vs state-less
 
