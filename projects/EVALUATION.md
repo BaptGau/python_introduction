@@ -5,7 +5,7 @@ Ce projet est le projet sur lequel vous serez évalués.
 ## Modalités
 
 **Groupe : entre 1 et 3 personnes**  
-**Date de rendu : [PLACEHOLDER]**
+**Date de rendu : 20/12/2026**
 
 Le projet doit être rendu de l'une des manières suivantes :
 
