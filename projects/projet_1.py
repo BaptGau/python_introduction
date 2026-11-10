@@ -32,6 +32,7 @@ def authentification(code_secret: str, essais: int) -> bool:
 def afficher_solde(solde: int) -> None:
     print(f"Solde disponible: {solde} €.")
 
+
 def depot(solde: int, montant: int) -> int:
     if montant < 0:
         print("Montant invalide. Solde non modifié.")
@@ -41,6 +42,7 @@ def depot(solde: int, montant: int) -> int:
     print(f"Dépôt accepté. Nouveau solde : {solde} €")
 
     return solde
+
 
 def retrait(solde: int, montant: int, plafond: int) -> int:
     if montant < 0:
@@ -61,11 +63,12 @@ def retrait(solde: int, montant: int, plafond: int) -> int:
 
     return solde
 
+
 def main(
     solde_initial: int = SOLDE_INITIAL,
     code_secret: str = CODE_SECRET,
     essais: int = MAX_ESSAIS,
-    plafond: int = PLAFOND_RETRAIT
+    plafond: int = PLAFOND_RETRAIT,
 ):
     can_enter = authentification(code_secret=code_secret, essais=essais)
 

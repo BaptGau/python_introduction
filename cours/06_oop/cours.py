@@ -28,8 +28,6 @@ class CompteBancaire:
         self._solde -= montant
 
 
-
-
 compte = CompteBancaire(titulaire="Baptiste", solde_initial=0)
 compte.deposer()
 

@@ -4,6 +4,7 @@ import dis
 
 
 def saluer(prenom: str, age: int) -> str:
+
     message = "Bonjour " + prenom
     message = message + f"\nTu as {age} ans"
     return message

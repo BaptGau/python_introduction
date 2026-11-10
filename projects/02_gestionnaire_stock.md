@@ -281,11 +281,11 @@ def normaliser_nom(nom: str) -> str: ...
 
 
 def ajouter_produit(
-        stock: dict[str, int],
-        seuils: dict[str, int],
-        nom: str,
-        quantite: int,
-        seuil: int,
+    stock: dict[str, int],
+    seuils: dict[str, int],
+    nom: str,
+    quantite: int,
+    seuil: int,
 ) -> None: ...
 
 
@@ -296,10 +296,10 @@ def retirer_stock(stock: dict[str, int], produit: str, quantite: int) -> None: .
 
 
 def enregistrer_mouvement(
-        historique: list[tuple[str, str, int]],
-        type_mouvement: str,
-        produit: str,
-        quantite: int,
+    historique: list[tuple[str, str, int]],
+    type_mouvement: str,
+    produit: str,
+    quantite: int,
 ) -> None: ...
 
 

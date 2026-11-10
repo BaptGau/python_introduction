@@ -122,10 +122,10 @@ Dans `__post_init__()` :
 Exemples :
 
 ```python
-Nombre(2).valeur       # 2.0
-Nombre(2.5).valeur     # 2.5
-Nombre(True)           # TypeError
-Nombre("deux")         # TypeError
+Nombre(2).valeur  # 2.0
+Nombre(2.5).valeur  # 2.5
+Nombre(True)  # TypeError
+Nombre("deux")  # TypeError
 ```
 
 ### `Texte`
